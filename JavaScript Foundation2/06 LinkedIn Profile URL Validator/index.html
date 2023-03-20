@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Profile URL Validator.</title>
+    <script>
+        let urlRegex = /^https?:\/www\.LinkedIn\.com\/in\/[a-zA-Z0-9_-]{5,30}[a-zA-Z0-9]$/;
+        let inputUrl = prompt("please enter linkeIn profile url");
+        let test = urlRegex.test(inputUrl);
+        if(test == true){
+            console.log(`${inputUrl} is a valid LinkedIn profile URL`);
+        }
+        else{
+            console.log(`${inputUrl} is not a valid LinkedIn profile URL`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
